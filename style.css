@@ -1,0 +1,636 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+/* FONT Neue Roman */
+@font-face {
+    font-display: swap; 
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/NeueHaasDisplay-Roman.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* Neue Medium */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/NeueHaasDisplay-Mediu.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* Neue Light */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/NeueHaasDisplay-Light.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* Neue Light Italic */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/NeueHaasDisplay-LightItalic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+   /* BOX SIZING */
+   .html{
+    box-sizing: border-box;
+   }
+   *,*::before, *::after{
+    box-sizing: inherit;
+   }
+
+body{
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #E7DECD;
+    background: #19211A;
+}
+
+.wrapper{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #19211A;
+}
+
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    padding-top: 8px;
+}
+
+.header_logo {
+    margin-right: auto; /* Зміщення логотипу вліво */
+}
+
+.header_nav {
+    flex-grow: 1; /* Розтягуємо меню, щоб зайняти доступний простір */
+    display: flex;
+    justify-content: center; /* Вирівнюємо по горизонталі по центру */
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.header_item {
+    margin-right: 32px;
+}
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.header_link{
+font-weight: 500;
+font-size: 16px;
+color: #e7decd;
+text-decoration: none;
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: 1;
+    color: #EB5E28;
+}
+  
+  .brand {
+    padding-top: 72px;
+    font-weight: 600;
+    font-size: 128px;
+    text-align: left; 
+  }
+  
+  .box {
+    padding-top: 72px;
+    width: 351px;
+    height: 118px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto; 
+  }
+
+  .soso {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #eb5e28;
+  }
+
+  .identity {
+    margin-top: 72px;
+    font-weight: 600;
+    font-size: 128px;
+    text-align: right;
+    padding-right: 160px;
+  }
+
+  .button-wrapper {
+    padding-left: 157px;
+    position: relative;
+    top: -100px;
+}
+
+  .discuss-btn {
+    position: relative;
+    border: 1.50px solid #eb5e28;
+    border-radius: 100px;
+    width: 220px;
+    height: 58px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #EB5E28;
+    background-color: transparent; 
+}
+.discuss-btn:hover {
+    background-color: #EB5E28; 
+    color: #E7DECD; 
+}
+
+/* Стилі для "welcome" section" */
+.welcome_block {
+  background-color: #E7DECD;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1120px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.header_welcome {
+  font-size: 72px;
+  margin-bottom: 72px;
+  color: #19211A;
+}
+
+.description_welcome {
+  font-size: 18px;
+  margin-bottom: 48px;
+  font-weight: 500;
+  line-height: 115%;
+  color: #19211a;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 256px);
+  justify-content: center;
+  gap: 32px;
+}
+
+.image {
+  width: 256px;
+  height: 333px;
+  margin-bottom: 72px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image_caption {
+  bottom: 20px; 
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 115%;
+  color: #19211a;
+}
+
+/* Стилі для "about us" section" */
+.about_us {
+  background-color: #19211A;
+  width: 1440px;
+  height: 783px;
+  margin-top: 24px;
+}
+
+.container {
+  max-width: 1120px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.header_about {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 115%;
+  color: #E7DECD;
+}
+
+.content_wrapper {
+  display: flex;
+  align-items: flex-start; /* Вирівнювання по верху */
+}
+
+.paragraphs {
+  flex: 1;
+}
+
+.paragraph_about1,
+.paragraph_about2,
+.paragraph_about3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115%;
+  color: #E7DECD;
+}
+
+.paragraph_about1 {
+  margin-top: 48px;
+}
+
+.paragraph_about2 {
+  margin-top: 230px;
+}
+
+.image_about {
+  margin-left: 40px; 
+}
+
+.image_about img {
+  width: 640px;
+  height: auto;
+}
+
+.paragraph_about3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 115%;
+  text-align: center;
+  margin-top: 128px;
+  color: #E7DECD;
+}
+
+/* Стилі для "services" section" */
+.services {
+  background-color: #E7DECD;
+  width: 1440px;
+  padding-top: 24px;
+}
+
+.container {
+  max-width: 1120px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.header_services {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 115%;
+  color: #19211a;
+}
+
+.card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.card {
+  width: 448px;
+  background-color: #19211A;
+  padding: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 115%;
+  color: #e7decd;
+}
+
+.card_text {
+  flex-grow: 1;
+  margin-top: 8px;
+  color: #E7DECD;
+}
+
+.card-btn {
+  margin-top: 16px;
+  border: 1.50px solid #E7DECD;
+  border-radius: 100px;
+  width: 180px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #EB5E28;
+  background-color: #E7DECD;
+}
+.card-btn:hover {
+  background-color: #EB5E28;
+  border: 1.50px solid #EB5E28;
+  color: #E7DECD;
+}
+
+.card:last-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Стилі для "stages of work" section" */
+.stages_of_work {
+  background-color: #19211A;
+  width: 1440px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header_stages {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 115%;
+  color: #eb5e28;
+  margin-top: 24px;
+}
+
+.stage_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.stage_title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 115%;
+  color: #eb5e28;
+}
+
+.stage_description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115%;
+  color: #e7decd;
+}
+
+.images_wrapper {
+  display: flex;
+  justify-content: center; /* Вирівнювання по центру */
+  margin-top: 32px;
+}
+
+.image_stages {
+  margin: 0 16px; /* Відступи між зображеннями */
+}
+
+.image_stages img {
+  width: 261px;
+  height: 398px;
+}
+
+.sub_stages {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+  position: relative; /* Для позиціонування кнопки */
+}
+
+.sub_stage {
+  width: calc(50% - 12px); /* Ширина півтори половини контейнера */
+  text-align: left;
+}
+
+.stages-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 58px;
+  border: 1.5px solid #eb5e28; /* Товщина рамки та колір */
+  border-radius: 100px; /* Закругленість кутів */
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #eb5e28; /* Колір тексту */
+  background-color: transparent; /* Прозорий фон */
+}
+.stages-btn:hover {
+  background-color: #EB5E28; /* колір фону при наведенні */
+  color: #FFFFFF; /* колір тексту при наведенні */
+}
+
+
+.sub_stage:last-child {
+  margin-left: calc(50% + 6px); /* Відстань між четвертим пунктом і кнопкою */
+}
+.sub_stage:nth-child(1) { 
+  margin-bottom: 64px; /* Встановлено відстань до нижнього краю контейнера */
+}
+
+/* Стилі для "portfolio" section" */
+.portfolio_description {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  color: #19211a;
+}
+
+.portfolio {
+  background-color: #E7DECD;
+  width: 1440px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 20px 0 20px; 
+}
+
+.header_portfolio {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 115%;
+  color: #19211A;
+}
+
+.portfolio_description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.portfolio_info,
+.portfolio_image {
+  width: calc(50% - 12px);
+}
+
+.portfolio_info {
+  margin-left: 128px;
+  margin-right: 12px;
+}
+
+.portfolio_image {
+  margin-right: 12px;
+}
+
+.portfolio_info img,
+.portfolio_image img {
+  width: 352px;
+  height: 528px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.description p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115%;
+  color: #19211a;
+}
+
+.button_container {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.contact_button {
+  border: 1.50px solid #eb5e28;
+    border-radius: 100px;
+    width: 220px;
+    height: 58px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #EB5E28;
+    background-color: transparent;
+    margin-bottom: 64px; 
+}
+.contact_button:hover {
+  background-color: #eb5e28;
+  color: #fff;
+}
+
+/* Стилі для "let's discuss" section" */
+.discussion {
+  background-color: #19211A;
+  width: 1440px;
+  margin-top: 64px;
+}
+
+.discussion .container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discussion_text {
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 115%;
+  color: #e7decd;
+}
+
+.discussion img {
+  width: 256px;
+  height: 171px;
+}
+
+footer {
+  height: 212px;
+  display: flex;
+}
+
+.foot-logo {
+  width: 27px;
+  height: 32px;
+  margin-right: 69px;
+}
+
+.footer-nav {
+  width: 169px;
+  height: 124px;
+  justify-content: stretch;
+  margin-right: 118px;
+}
+
+.nav-item-foot {
+  color:#E7DECD;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.foot-cont {
+  margin-right: 117px;
+}
+
+.contacts {
+  margin-bottom: 16px;
+}
+
+.foot-policy {
+  margin-right: 117px;
+}
+
+.policy {
+  width: 120px;
+}
