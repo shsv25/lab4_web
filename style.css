@@ -88,6 +88,7 @@ body{
 .wrapper{
     max-width: 1120px;
     margin: 0 auto;
+ 
 }
 
 .header{
@@ -97,7 +98,6 @@ body{
     width: 100%;
     background-color: #19211A;
 }
-
 
 .header_wrapper {
     display: flex;
@@ -197,19 +197,18 @@ text-decoration: none;
 /* Стилі для "welcome" section" */
 .welcome_block {
   background-color: #E7DECD;
-  padding: 24px 0;
   text-align: center;
 }
 
 .container {
-  max-width: 1120px; 
-  margin: 0 auto; 
-  padding: 0 20px; 
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 20px 0px 20px; 
 }
 
 .header_welcome {
   font-size: 72px;
-  margin-bottom: 72px;
+  margin-bottom: 64px;
   color: #19211A;
 }
 
@@ -231,7 +230,7 @@ text-decoration: none;
 .image {
   width: 256px;
   height: 333px;
-  margin-bottom: 72px;
+  margin-bottom: 125px;
 }
 .image img {
   width: 100%;
@@ -239,7 +238,7 @@ text-decoration: none;
   object-fit: cover;
 }
 .image_caption {
-  bottom: 20px; 
+  margin-top: 16px;
   font-weight: 300;
   font-size: 28px;
   line-height: 115%;
@@ -249,15 +248,6 @@ text-decoration: none;
 /* Стилі для "about us" section" */
 .about_us {
   background-color: #19211A;
-  width: 1440px;
-  height: 783px;
-  margin-top: 24px;
-}
-
-.container {
-  max-width: 1120px; 
-  margin: 0 auto; 
-  padding: 0 20px; 
 }
 
 .header_about {
@@ -269,7 +259,7 @@ text-decoration: none;
 
 .content_wrapper {
   display: flex;
-  align-items: flex-start; /* Вирівнювання по верху */
+  align-items: flex-start; 
 }
 
 .paragraphs {
@@ -308,20 +298,13 @@ text-decoration: none;
   line-height: 115%;
   text-align: center;
   margin-top: 128px;
+  margin-bottom: 64px;
   color: #E7DECD;
 }
 
 /* Стилі для "services" section" */
 .services {
   background-color: #E7DECD;
-  width: 1440px;
-  padding-top: 24px;
-}
-
-.container {
-  max-width: 1120px; 
-  margin: 0 auto; 
-  padding: 0 20px; 
 }
 
 .header_services {
@@ -382,18 +365,12 @@ text-decoration: none;
 .card:last-child {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 64px;
 }
 
-/* Стилі для "stages of work" section" */
+/* Стилі для "stages of work" section */
 .stages_of_work {
   background-color: #19211A;
-  width: 1440px;
-}
-
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .header_stages {
@@ -401,13 +378,12 @@ text-decoration: none;
   font-size: 72px;
   line-height: 115%;
   color: #eb5e28;
-  margin-top: 24px;
 }
 
 .stage_wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
+  margin-top: 48px;
 }
 
 .stage_title {
@@ -427,12 +403,12 @@ text-decoration: none;
 
 .images_wrapper {
   display: flex;
-  justify-content: center; /* Вирівнювання по центру */
+  justify-content: center; 
   margin-top: 32px;
 }
 
 .image_stages {
-  margin: 0 16px; /* Відступи між зображеннями */
+  margin: 0 16px; 
 }
 
 .image_stages img {
@@ -444,7 +420,7 @@ text-decoration: none;
   display: flex;
   align-items: flex-start;
   margin-top: 32px;
-  position: relative; /* Для позиціонування кнопки */
+  position: relative; 
 }
 
 .sub_stage {
@@ -459,19 +435,18 @@ text-decoration: none;
   transform: translate(-50%, -50%);
   width: 220px;
   height: 58px;
-  border: 1.5px solid #eb5e28; /* Товщина рамки та колір */
-  border-radius: 100px; /* Закругленість кутів */
+  border: 1.5px solid #eb5e28; 
+  border-radius: 100px; 
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  color: #eb5e28; /* Колір тексту */
-  background-color: transparent; /* Прозорий фон */
+  color: #eb5e28; 
+  background-color: transparent; 
 }
 .stages-btn:hover {
-  background-color: #EB5E28; /* колір фону при наведенні */
-  color: #FFFFFF; /* колір тексту при наведенні */
+  background-color: #EB5E28; 
+  color: #FFFFFF; 
 }
-
 
 .sub_stage:last-child {
   margin-left: calc(50% + 6px); /* Відстань між четвертим пунктом і кнопкою */
@@ -490,13 +465,6 @@ text-decoration: none;
 
 .portfolio {
   background-color: #E7DECD;
-  width: 1440px;
-}
-
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 64px 20px 0 20px; 
 }
 
 .header_portfolio {
@@ -569,7 +537,6 @@ text-decoration: none;
 /* Стилі для "let's discuss" section" */
 .discussion {
   background-color: #19211A;
-  width: 1440px;
   margin-top: 64px;
 }
 
