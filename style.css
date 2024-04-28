@@ -194,6 +194,251 @@ text-decoration: none;
     color: #E7DECD; 
 }
 
+@media only screen and (max-width: 430px) {
+
+  .container {
+    width: calc(100% - 32px); 
+    max-width: 430px;
+    margin-left: 16px; 
+    margin-right: 16px;
+    margin-bottom: 48px; 
+  }
+
+  .brand {
+    font-size: 96px;
+  }
+
+  .description {
+    margin-top: 48px;
+    text-align: center; 
+  }
+
+  .identity {
+    font-size: 96px;
+    margin-top: 48px;
+    margin-left: 16px; 
+    text-align: right;
+  }
+
+  .button-wrapper {
+    margin-left: 16px; 
+    
+  }
+
+  .discuss-btn {
+    position: relative;
+    margin-top: 164px;
+    border: 1.50px solid #eb5e28;
+    border-radius: 100px;
+    width: 220px;
+    height: 58px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EB5E28;
+    background-color: transparent; 
+  }
+
+
+   /* Стилі для адаптації блоку "about us" */
+   .about_us {
+    background-color: #19211A;
+  }
+  
+  .header_about {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 115%;
+    color: #E7DECD;
+  }
+  
+  .content_wrapper {
+    display: flex;
+    align-items: flex-start; 
+  }
+  
+  .paragraphs {
+    flex: 1;
+  }
+  
+  .paragraph_about1,
+  .paragraph_about2,
+  .paragraph_about3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 115%;
+    color: #E7DECD;
+  }
+  
+  .paragraph_about1 {
+    margin-top: 16px;
+  }
+  
+  .paragraph_about2 {
+    margin-top: 16px; 
+  }
+  
+  .image_about {
+    display: none; 
+  }
+  
+  .paragraph_about3 {
+    text-align: center; 
+    margin-top: 16px; 
+    margin-bottom: 64px; 
+  }
+
+/* Стилі для "stages of work" section */
+.stages_of_work {
+  background-color: #19211A;
+}
+
+.header_stages {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 115%;
+  color: #eb5e28;
+  margin-bottom: 24px;
+}
+
+.stage_wrapper {
+  margin-top: 24px;
+}
+
+.stage_description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+  color: #e7decd;
+  margin-left: 24px;
+  margin-bottom: 16px; /* Додаємо відстань між пунктами */
+}
+
+.images_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.image_stages {
+  margin: 8px;
+}
+
+.image_stages img {
+  width: 200px;
+  height: auto;
+}
+
+.sub_stages {
+  display: flex;
+  flex-direction: column; /* Підготовка для розташування пунктів по одному */
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.sub_stage {
+  text-align: left;
+  margin-right: 24px;
+}
+
+.stages-btn {
+  width: 180px;
+  height: 48px;
+  font-size: 14px;
+  border: 1.5px solid #eb5e28;
+  border-radius: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: #eb5e28;
+  background-color: transparent;
+}
+
+.stages-btn:hover {
+  background-color: #EB5E28;
+  color: #FFFFFF;
+}
+
+
+/* Стилі для "portfolio" section" */
+.portfolio_description {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  color: #19211a;
+}
+
+.portfolio {
+  background-color: #E7DECD;
+}
+
+.header_portfolio {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 115%;
+  color: #19211A;
+}
+
+.portfolio_description {
+  margin-top: 48px; /* Збільшуємо відстань між заголовком і описом */
+  text-align: center; /* Вирівнюємо опис по центру */
+}
+
+.description p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115%;
+  color: #19211a;
+  margin-bottom: 32px; /* Збільшуємо відстань між абзацами */
+}
+
+.button_container {
+  text-align: center;
+}
+
+.contact_button {
+  border: 1.50px solid #eb5e28;
+  border-radius: 100px;
+  width: 220px;
+  height: 58px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #EB5E28;
+  background-color: transparent;
+  margin-bottom: 64px;
+}
+
+.contact_button:hover {
+  background-color: #eb5e28;
+  color: #fff;
+}
+
+.portfolio_info,
+.portfolio_image {
+  display: none;
+}
+
+.discussion {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+}
+
+
+
 /* Стилі для "welcome" section" */
 .welcome_block {
   background-color: #E7DECD;
